@@ -590,11 +590,41 @@
 }
 
 /* Ajuste específico para Celulares */
+/* Ajustes para Celulares */
 @media (max-width: 768px) {
-  /* Ocultar la línea horizontal en móviles para que no cruce el texto */
-  .proceso-grid::before {
-    display: none;
+  header {
+    flex-direction: column; /* Pone el logo arriba y el menú abajo */
+    padding: 15px 10px;
+    height: auto; /* Permite que el header crezca según el contenido */
   }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones pasen a la fila de abajo si no caben */
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 13px; /* Achicamos un poco la letra para que quepan más */
+    padding: 6px 10px;
+  }
+
+  .btn-nav {
+    width: 100%; /* El botón de FIDO resalta ocupando todo el ancho abajo */
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  /* Evitar el desplazamiento lateral molesto */
+  body, html {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+}
   
   /* Ajustar los pasos para que se vean bien en vertical */
   .paso {
