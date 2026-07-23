@@ -9,7 +9,8 @@
 
     :root {
       --hn-navy: #0a192f;
-      --hn-burdeo: #800020;
+      --hn-accent: #a3602f; /* Naranja identidad nuevo logo */
+      --hn-teal: #3a8d97; /* Turquesa identidad nuevo logo */
       --light-bg: #f8fafc;
       --text: #1e293b;
       --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -30,7 +31,7 @@
       font-size: 28px; font-weight: 700; margin-bottom: 15px; text-align: center; color: var(--hn-navy); text-transform: uppercase; letter-spacing: 1px;
     }
     h2.section-title::after {
-      content: ""; display: block; width: 60px; height: 4px; background: var(--hn-burdeo); margin: 15px auto 0; border-radius: 2px;
+      content: ""; display: block; width: 60px; height: 4px; background: var(--hn-accent); margin: 15px auto 0; border-radius: 2px;
     }
     .section-subtitle {
       text-align: center; color: #64748b; font-size: 14px; margin-bottom: 45px; text-transform: uppercase; letter-spacing: 2px; display: block;
@@ -45,18 +46,18 @@
     /* Ajuste de navegación para soportar más items */
     nav { display: flex; align-items: center; }
     nav a { color: var(--hn-navy); margin-left: 18px; text-decoration: none; font-size: 12px; font-weight: 700; transition: var(--transition); text-transform: uppercase; white-space: nowrap; }
-    nav a:hover { color: var(--hn-burdeo); }
+    nav a:hover { color: var(--hn-accent); }
     .btn-nav {
       background: var(--hn-navy);
-      border: 1px solid var(--hn-burdeo); /* Un borde sutil burdeo */
+      border: 1px solid var(--hn-accent); /* Borde sutil naranja */
       color: white !important;
       padding: 8px 20px;
       border-radius: 4px;
       transition: all 0.3s ease;
     }
     .btn-nav:hover {
-      background: var(--hn-burdeo);
-      border-color: var(--hn-burdeo);
+      background: var(--hn-accent);
+      border-color: var(--hn-accent);
     }
     /* --- Hero --- */
 #hero {
@@ -108,8 +109,8 @@
 .metric-icon-container {
   width: 54px;
   height: 54px;
-  background: rgba(128, 0, 32, 0.05);
-  border: 1px solid rgba(128, 0, 32, 0.1);
+  background: rgba(222, 132, 64, 0.05);
+  border: 1px solid rgba(222, 132, 64, 0.1);
   border-radius: 10px; 
   display: flex;
   align-items: center;
@@ -121,7 +122,7 @@
 .metric-icon-container svg {
   width: 28px;
   height: 28px;
-  fill: var(--hn-burdeo);
+  fill: var(--hn-accent);
   transition: var(--transition);
 }
 
@@ -151,12 +152,12 @@
 /* --- Efecto Hover Mejorado --- */
 .metric-card:hover { 
   transform: translateX(10px); /* Se mueve un poco a la derecha en lugar de hacia arriba */
-  border-color: var(--hn-burdeo); 
+  border-color: var(--hn-accent); 
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .metric-card:hover .metric-icon-container {
-  background: var(--hn-burdeo);
+  background: var(--hn-accent);
 }
 
 .metric-card:hover .metric-icon-container svg {
@@ -164,7 +165,7 @@
 }
     /* --- Quienes Somos --- */
     .nosotros-grid { display: flex; flex-wrap: wrap; align-items: center; gap: 50px; }
-    .nosotros-texto { flex: 1; min-width: 320px; border-left: 6px solid var(--hn-burdeo); padding-left: 30px; }
+    .nosotros-texto { flex: 1; min-width: 320px; border-left: 6px solid var(--hn-accent); padding-left: 30px; }
     .nosotros-destaque { flex: 1; min-width: 320px; background: var(--light-bg); padding: 40px; border-radius: 8px; }
 
     /* --- Servicios --- */
@@ -333,28 +334,28 @@
 
 /* --- Efectos Hover para la Línea de Tiempo --- */
 .paso:hover .numero { 
-  background: var(--hn-burdeo); 
+  background: var(--hn-accent); 
   color: #fff;
-  border-color: var(--hn-burdeo);
+  border-color: var(--hn-accent);
   transform: scale(1.1); 
-  box-shadow: 0 0 0 5px rgba(128, 0, 32, 0.1); /* Efecto de "halo" burdeo */
+  box-shadow: 0 0 0 5px rgba(222, 132, 64, 0.1); /* Efecto de "halo" naranja */
 }
 
 .paso:hover .paso-icon {
-  background: rgba(128, 0, 32, 0.05); /* Fondo burdeo suave al icono */
-  border-color: rgba(128, 0, 32, 0.1);
+  background: rgba(222, 132, 64, 0.05); /* Fondo naranja suave al icono */
+  border-color: rgba(222, 132, 64, 0.1);
   transform: translateY(-5px);
 }
 
 .paso:hover .paso-icon svg {
-  fill: var(--hn-burdeo); /* Icono cambia a burdeo */
+  fill: var(--hn-accent); /* Icono cambia a naranja */
 }
 
 
 
     /* --- Proyectos --- */
     .proyectos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .proyecto-card { border-radius: 8px; overflow: hidden; background: white; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: var(--transition); border-top: 4px solid var(--hn-burdeo); }
+    .proyecto-card { border-radius: 8px; overflow: hidden; background: white; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: var(--transition); border-top: 4px solid var(--hn-accent); }
     .proyecto-card:hover { transform: translateY(-10px); }
     .proyecto-img { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
     .proyecto-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
@@ -407,10 +408,10 @@
     .form-group label { display: block; font-weight: 700; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; color: var(--hn-navy); }
     input, textarea { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; font-family: inherit; font-size: 15px; }
     
-    .btn { display: block; width: 100%; padding: 15px; background: var(--hn-burdeo); color: white; border: none; border-radius: 4px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: 0.3s; text-decoration: none; text-align: center;box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3); }
+    .btn { display: block; width: 100%; padding: 15px; background: var(--hn-accent); color: white; border: none; border-radius: 4px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: 0.3s; text-decoration: none; text-align: center;box-shadow: 0 4px 15px rgba(222, 132, 64, 0.3); }
     .btn:hover {
-      background: #a00028; /* Un burdeo un poco más claro al hover */
-      box-shadow: 0 6px 20px rgba(128, 0, 32, 0.4);
+      background: #844f26; /* Naranja más oscuro al hover */
+      box-shadow: 0 6px 20px rgba(222, 132, 64, 0.4);
     }
     /* --- Footer Mejorado --- */
     footer {
@@ -441,7 +442,7 @@
       display: block;
       width: 30px;
       height: 2px;
-      background: var(--hn-burdeo);
+      background: var(--hn-accent);
       margin-top: 10px;
     }
 
@@ -463,7 +464,7 @@
     .contact-item svg {
       width: 18px;
       margin-right: 12px;
-      fill: var(--hn-burdeo);
+      fill: var(--hn-accent);
       flex-shrink: 0;
       margin-top: 3px;
     }
@@ -499,8 +500,8 @@
   height: 100%;
   background: linear-gradient(
     45deg, 
-    rgba(10, 25, 47, 0.7) 0%, 
-    rgba(128, 0, 32, 0.3) 100%
+    rgba(10, 25, 47, 0.75) 0%, 
+    rgba(58, 141, 151, 0.35) 100%
   );
   z-index: 1; /* Se sitúa entre el video y el texto */
 }
@@ -508,25 +509,25 @@
 .servicio-icon {
   width: 50px;
   height: 50px;
-  background: rgba(128, 0, 32, 0.2); /* Fondo burdeo muy suave */
+  background: rgba(222, 132, 64, 0.2); /* Fondo naranja muy suave */
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   transition: var(--transition);
-  border: 1px solid rgba(128, 0, 32, 0.4);
+  border: 1px solid rgba(222, 132, 64, 0.4);
 }
 
 .servicio-icon svg {
   width: 28px;
   height: 28px;
-  fill: var(--hn-burdeo); /* El color burdeo de tu marca */
+  fill: var(--hn-accent); /* El color naranja de tu marca */
 }
 
 /* Efecto al pasar el mouse por la tarjeta */
 .servicio-card:hover .servicio-icon {
-  background: var(--hn-burdeo);
+  background: var(--hn-accent);
   transform: rotate(-10deg) scale(1.1);
 }
 
@@ -564,12 +565,12 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: var(--hn-burdeo);
+  background: var(--hn-accent);
   color: white;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 10px 20px rgba(128, 0, 32, 0.4);
+  box-shadow: 0 10px 20px rgba(222, 132, 64, 0.4);
 }
 
 .img-overlay-badge strong {
@@ -679,7 +680,7 @@
 }
 
 .zona-badge {
-  border-left: 3px solid var(--hn-burdeo);
+  border-left: 3px solid var(--hn-accent);
   padding-left: 12px;
   margin-bottom: 10px;
 }
@@ -872,7 +873,7 @@
   <div class="mapa-col">
     <svg viewBox="0 0 100 800" xmlns="http://www.w3.org/2000/svg">
       <path d="M45,20 Q55,200 40,400 T50,780" />
-      <circle cx="45" cy="40" r="8" fill="var(--hn-burdeo)" /> <circle cx="44" cy="360" r="10" fill="var(--hn-burdeo)" /> <circle cx="50" cy="760" r="8" fill="var(--hn-burdeo)" /> </svg>
+      <circle cx="45" cy="40" r="8" fill="var(--hn-accent)" /> <circle cx="44" cy="360" r="10" fill="var(--hn-accent)" /> <circle cx="50" cy="760" r="8" fill="var(--hn-accent)" /> </svg>
   </div>
 
   <div class="info-col">
@@ -910,18 +911,18 @@
     <div class="nosotros-grid">
       <div class="nosotros-destaque" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);backdrop-filter: blur(5px); padding: 40px; border-radius: 12px;">
         <h3 style="color: #ffffff; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
-  <span style="width: 4px; height: 20px; background: var(--hn-burdeo); border-radius: 2px;"></span>
+  <span style="width: 4px; height: 20px; background: var(--hn-accent); border-radius: 2px;"></span>
   Impresión Digital Altas Prestaciones
 </h3>
         <p style="font-size: 14px; color: #cbd5e1;">Contamos con tecnología <strong>Durst P5</strong> y <strong>HP Latex</strong> de última generación, permitiendo impresiones de hasta 5 metros de ancho con tintas ecológicas y durabilidad extrema.</p>
         <hr style="margin: 20px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
         <h3 style="color: #ffffff; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
-  <span style="width: 4px; height: 20px; background: var(--hn-burdeo); border-radius: 2px;"></span>
+  <span style="width: 4px; height: 20px; background: var(--hn-accent); border-radius: 2px;"></span>
   Área de Metalmecánica
 </h3>
         <p style="font-size: 14px; color: #cbd5e1;">Maestranza propia para la fabricación de estructuras monumentales, tótems y señalética caminera bajo normas de ingeniería estructural.</p>
       </div>
-      <div class="nosotros-texto" style="border-left-color: var(--hn-burdeo);">
+      <div class="nosotros-texto" style="border-left-color: var(--hn-accent);">
         <p style="margin-bottom: 20px;">Nuestra planta en Colina está diseñada para flujos de trabajo de alta demanda, asegurando que los tiempos de respuesta sean los más competitivos del mercado.</p>
         <ul style="list-style: none; font-size: 14px; color: #cbd5e1;">
           <li style="margin-bottom: 10px;">⚡ <strong>+2.000 m²</strong> de superficie productiva.</li>
